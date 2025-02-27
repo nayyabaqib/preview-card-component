@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2ebe3;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product-image {
+            width: 50%;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+            width: 50%;
+        }
+        .category {
+            text-transform: uppercase;
+            color: gray;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .price {
+            display: flex;
+            align-items: center;
+        }
+        .new-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #3d8168;
+            margin-right: 10px;
+        }
+        .old-price {
+            font-size: 14px;
+            text-decoration: line-through;
+            color: gray;
+        }
+        .add-to-cart {
+            background-color: #3d8168;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .add-to-cart:hover {
+            background-color: #1e5945;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum" class="product-image">
+        <div class="card-content">
+            <p class="category">PERFUME</p>
+            <h2 class="title">Gabrielle Essence Eau De Parfum</h2>
+            <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+            <div class="price">
+                <span class="new-price">$149.99</span>
+                <span class="old-price">$169.99</span>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
